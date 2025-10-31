@@ -38,7 +38,8 @@ export function TestimonialsSection() {
     }
 
   return (
-    <section id="testimonials" className="container py-12 sm:py-24">
+    <section id="testimonials" className="container py-12 sm:py-24 relative overflow-hidden">
+      <div className="absolute -right-24 -bottom-24 w-72 h-72 rounded-full bg-accent/10 -z-10 dot-background" />
       <div className="mb-12 text-center">
         <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">What Our Clients Say</h2>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
@@ -49,17 +50,17 @@ export function TestimonialsSection() {
         opts={{
           align: "start",
         }}
-        className="w-full max-w-4xl mx-auto"
+        className="w-full max-w-5xl mx-auto"
       >
         <CarouselContent>
           {testimonials.map((testimonial, index) => {
             const logo = getLogo(testimonial.logoId);
             return (
-              <CarouselItem key={index} className="md:basis-1/2">
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full bg-card/50 backdrop-blur-sm">
+                  <Card className="h-full bg-card/50 backdrop-blur-sm border-border/50 rounded-xl">
                     <CardContent className="flex h-full flex-col justify-between p-6">
-                      <blockquote className="text-lg italic">"{testimonial.quote}"</blockquote>
+                      <blockquote className="text-base italic">"{testimonial.quote}"</blockquote>
                       <div className="mt-6 flex items-center">
                         {logo && <Image
                           src={logo.imageUrl}
@@ -67,10 +68,10 @@ export function TestimonialsSection() {
                           data-ai-hint={logo.imageHint}
                           width={40}
                           height={40}
-                          className="h-10 w-10 rounded-full border-2 border-primary/50"
+                          className="h-10 w-10 rounded-full border-2 border-primary/50 object-cover"
                         />}
                         <div className="ml-4">
-                          <p className="font-semibold">{testimonial.name}</p>
+                          <p className="font-semibold font-headline">{testimonial.name}</p>
                           <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                         </div>
                       </div>
@@ -81,8 +82,8 @@ export function TestimonialsSection() {
             )
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="-left-4"/>
+        <CarouselNext className="-right-4"/>
       </Carousel>
     </section>
   );

@@ -27,22 +27,22 @@ const services = [
 export function ServicesSection() {
   return (
     <section id="services" className="container py-12 sm:py-24">
-      <div className="mb-12 text-center">
+      <div className="mb-12 text-left">
         <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">Our Services</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+        <p className="mt-4 max-w-2xl text-muted-foreground">
           We provide a comprehensive suite of tech services to propel your business forward.
         </p>
       </div>
       <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        {services.map((service) => (
-          <Card key={service.title} className="transform-gpu transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-card/50 backdrop-blur-sm">
-            <CardHeader className="flex flex-col items-center text-center">
-              <div className="mb-4 rounded-full bg-primary/10 p-4">
+        {services.map((service, index) => (
+          <Card key={service.title} className="transform-gpu transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl bg-card/50 backdrop-blur-sm border-dashed border-primary/20" style={{'--delay': `${index * 100}ms`} as React.CSSProperties}>
+            <CardHeader className="flex flex-row items-center gap-4">
+              <div className="rounded-full bg-primary/10 p-3">
                 {service.icon}
               </div>
-              <CardTitle>{service.title}</CardTitle>
+              <CardTitle className="font-headline text-lg font-bold">{service.title}</CardTitle>
             </CardHeader>
-            <CardContent className="text-center text-muted-foreground">
+            <CardContent className="text-left text-muted-foreground text-sm">
               {service.description}
             </CardContent>
           </Card>
