@@ -8,7 +8,7 @@ const navLinks = [
 export function Header() {
   return (
     <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex h-16 items-center justify-center rounded-full border border-border/40 bg-background/60 px-4 shadow-lg backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+      <div className="group flex h-16 items-center justify-center rounded-full border border-border/40 bg-background/60 px-4 shadow-lg backdrop-blur-md transition-all duration-300 ease-in-out hover:px-6 supports-[backdrop-filter]:bg-background/60">
         <nav className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
           {navLinks.map((link) => (
             <a
@@ -20,7 +20,7 @@ export function Header() {
             </a>
           ))}
         </nav>
-        <div className="mx-6 flex">
+        <div className="mx-4 flex transition-all duration-300 ease-in-out group-hover:mx-6">
           <a href="/" className="flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export function Header() {
             >
               <path d="M12.22 2h-4.44l-3 9h5l-3.33 11h8.89l3-9h-5l3.33-11z" />
             </svg>
-            <span className="sr-only">NexoForge</span>
+            <span className="font-bold hidden md:inline-block transition-all duration-300 ease-in-out">NexoForge</span>
           </a>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
