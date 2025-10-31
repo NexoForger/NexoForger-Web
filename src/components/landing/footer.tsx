@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border/40 py-8">
       <div className="container flex flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} NexoForge. All rights reserved.
+          &copy; {new Date().getFullYear()} NexoForger. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a href="#" className="text-muted-foreground transition-colors hover:text-foreground">

@@ -16,7 +16,7 @@ export function HeroSection() {
           </h1>
         </div>
         <p className="mt-6 max-w-2xl text-lg text-muted-foreground">
-          NexoForge empowers enterprise businesses with cutting-edge development,
+          NexoForger empowers enterprise businesses with cutting-edge development,
           cloud architecture, and ERP integration to accelerate growth and innovation.
         </p>
         <div className="mt-8 flex justify-start">

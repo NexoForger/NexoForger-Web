@@ -34,7 +34,7 @@ export function Header() {
             >
               <path d="M12.22 2h-4.44l-3 9h5l-3.33 11h8.89l3-9h-5l3.33-11z" />
             </svg>
-            <span className="font-bold hidden md:inline-block transition-all duration-300 ease-in-out">NexoForge</span>
+            <span className="font-bold hidden md:inline-block transition-all duration-300 ease-in-out">NexoForger</span>
           </a>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
