@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <Header />
       <main className="flex-1">
-        <div className="relative isolate overflow-hidden">
+        <div className="relative isolate overflow-hidden pt-16">
           <div className="grid-background absolute inset-0 -z-10" />
           <Sqwiggle />
           <HeroSection />
