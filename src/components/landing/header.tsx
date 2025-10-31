@@ -1,11 +1,27 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 
+const navLinks = [
+  { href: "#services", label: "Services" },
+  { href: "#testimonials", label: "Testimonials" },
+];
+
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
-        <div className="mr-4 flex">
-          <a href="/" className="mr-6 flex items-center space-x-2">
+    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
+      <div className="flex h-16 items-center justify-center rounded-full border border-border/40 bg-background/60 px-4 shadow-lg backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+        <nav className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="transition-colors hover:text-foreground"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <div className="mx-6 flex">
+          <a href="/" className="flex items-center space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -14,16 +30,15 @@ export function Header() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="h-6 w-6 text-primary"
+              className="h-8 w-8 text-primary"
             >
               <path d="M12.22 2h-4.44l-3 9h5l-3.33 11h8.89l3-9h-5l3.33-11z" />
             </svg>
-            <span className="font-bold sm:inline-block">
-              NexoForge
-            </span>
+            <span className="sr-only">NexoForge</span>
           </a>
         </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
+        <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
+           <a href="#cta" className="transition-colors hover:text-foreground">Contact</a>
           <ThemeToggle />
         </div>
       </div>
