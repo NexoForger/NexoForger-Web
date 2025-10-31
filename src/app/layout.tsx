@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
+import { CursorGlow } from '@/components/cursor-glow';
 
 export const metadata: Metadata = {
   title: 'NexoForge Landing',
@@ -25,6 +26,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <ThemeProvider>
+          <CursorGlow />
           {children}
           <Toaster />
         </ThemeProvider>
