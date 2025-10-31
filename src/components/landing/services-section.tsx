@@ -14,8 +14,8 @@ const services = [
   },
   {
     icon: <Cpu className="h-8 w-8 text-primary" />,
-    title: "AI & Machine Learning",
-    description: "Integrate intelligent automation and data-driven insights into your products with our expert AI/ML services.",
+    title: "ERP Solutions",
+    description: "Integrate intelligent automation and data-driven insights into your products with our expert ERP services.",
   },
   {
     icon: <Lock className="h-8 w-8 text-primary" />,

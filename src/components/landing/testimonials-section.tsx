@@ -23,7 +23,7 @@ const testimonials = [
     logoId: "testimonial-logo-3"
   },
   {
-    quote: "Their AI integration has given us a significant competitive advantage. We can now make smarter decisions faster than ever before.",
+    quote: "Their ERP integration has given us a significant competitive advantage. We can now make smarter decisions faster than ever before.",
     name: "Michael Brown",
     title: "Head of Product, FutureTech",
     logoId: "testimonial-logo-4"
