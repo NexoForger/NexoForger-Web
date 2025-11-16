@@ -1,8 +1,9 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#testimonials", label: "Testimonials" },
+    {href: "/about", label: "About"},
+    { href: "/#services", label: "Services" },
+  // { href: "/#testimonials", label: "Testimonials" },
 ];
 
 export function Header() {
@@ -38,7 +39,8 @@ export function Header() {
           </a>
         </div>
         <div className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
-           <a href="#cta" className="transition-colors hover:text-foreground">Contact</a>
+           <a href="/#cta" className="transition-colors hover:text-foreground">Contact</a>
+            <a href="/careers" className="transition-colors hover:text-foreground">Careers</a>
           <ThemeToggle />
         </div>
       </div>

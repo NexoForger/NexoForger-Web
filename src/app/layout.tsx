@@ -5,7 +5,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { CursorGlow } from '@/components/cursor-glow';
 
 export const metadata: Metadata = {
-  title: 'NexoForge Landing',
+  title: 'NexoForger',
   description: 'Empowering Enterprise with Cutting-Edge Tech Solutions',
 };
 

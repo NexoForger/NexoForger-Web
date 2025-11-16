@@ -1,7 +1,7 @@
 import { Header } from "@/components/landing/header";
 import { HeroSection } from "@/components/landing/hero-section";
 import { ServicesSection } from "@/components/landing/services-section";
-import { TestimonialsSection } from "@/components/landing/testimonials-section";
+// import { TestimonialsSection } from "@/components/landing/testimonials-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { Footer } from "@/components/landing/footer";
 import { Sqwiggle } from "@/components/landing/sqwiggle";
@@ -17,7 +17,7 @@ export default function Home() {
           <Sqwiggle />
           <HeroSection />
           <ServicesSection />
-          <TestimonialsSection />
+          {/*<TestimonialsSection />*/}
           <CtaSection />
         </div>
       </main>
