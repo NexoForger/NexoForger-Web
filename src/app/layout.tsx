@@ -17,6 +17,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+          {/* Site-wide Open Graph Tags */}
+          <meta property="og:title" content="NexoForger" />
+          <meta property="og:description" content="Forge Your Future with Next-Gen Tech Solutions." />
+          <meta property="og:image" content="https://example.com/path/to/your/default-image.jpg" />
+          <meta property="og:url" content="https://nexoforger.com" />
+          <meta property="og:type" content="website" />
+
+          {/* Site-wide Twitter Card Tags */}
+          {/*<meta name="twitter:card" content="summary_large_image" />*/}
+          {/*<meta name="twitter:title" content="Your Site Title" />*/}
+          {/*<meta name="twitter:description" content="A brief description of your site." />*/}
+          {/*<meta name="twitter:image" content="https://example.com/path/to/your/default-image.jpg" />*/}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
